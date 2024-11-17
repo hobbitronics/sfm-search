@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search SFM as JSON Data</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        font-size: large;
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 9fr 1fr;
+      }
+      #results {
+        margin-top: 20px;
+      }
+      .entry {
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .lexeme {
+        font-weight: bold;
+      }
+      .variant {
+        margin-left: 10px;
+      }
+      .sense {
+        margin-left: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>Standard Format Marker Regular Expression Search</h1>
+      <label>
+        <p>
+          Search for lexemes, glosses, or definitions (hint use * as wildcard or
+          [nŋ] for n or ŋ):
+        </p>
+        <input type="text" id="search-input" placeholder="Enter search query" />
+      </label>
+      <button id="x-btn">x</button>
+
+      <div id="results"></div>
+    </section>
+
+    <footer>Copywrite &copy; 2024 | All Rights Reserved</footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1 @@
+Just place your Standard Format Marker .txt file in the directory and name it "data.txt". It will then be parsed as JSON by the index.js file when you serve the index.html file. You will then have a webpage with a searchfield that accepts REGEX and returns results from the data.
